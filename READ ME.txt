@@ -1,0 +1,25 @@
+main.py contains the main file you need to run, all options are included 
+within, you just need to run it in the shell or vs code or something.  
+All other files are sorted via either being for the electron-electron 
+interaction [el_el] or electron-phonon interaction [el_ph]. each are then 
+labelled with what they do. 
+
+generator - generates all diagrams 
+disconnected - contained the function which removed all disconnected 
+topological equiv - reduces all diagrams down to their top inequiv forms 
+genFunctions - contains functions used throughout multiple files 
+
+there are no key variables, but the key functions are: 
+ 
+all_diagrams(n) - gens all diagrams for the given n 
+connected_check(i,n) - checks id the diagram i is connected for the given n 
+all_swapps(n) - finds all possible transformations of variables for top equiv proof 
+
+all el_ph lines of code are roughly notated but not all el_el are,  
+they work the same way but have different limits. 
+ 
+Any issues let me know. 
+
+NOTE: have not included the self-energy code as it is very slow, buggy and  
+sometimes didn't work. (very complicated bit of code). can still give it to 
+you though if requested. 
